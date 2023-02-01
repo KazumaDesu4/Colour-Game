@@ -1,0 +1,31 @@
+<html>
+
+	<head>
+		<title>The Colour Game</title>
+		<link rel="stylesheet" href="colour_game_style.css">
+		<script src="colour_game_script.js"></script>
+	</head>
+	
+	<body>
+		<h1>The Colour Game</h1>
+		<h2>What is this colour?</h2>
+		<h3 id="colourText">Replace this text</h3>
+		
+		<button type="button" id="button1" onclick="compare('#FF0000')">Red</button>
+		<button type="button" id="button2" onclick="compare('#0000FF')">Blue</button>
+		<button type="button" id="button3" onclick="compare('#FFFF00')">Yellow</button>
+		<button type="button" id="button4" onclick="compare('#00FF00')">Green</button>
+		<button type="button" id="button5" onclick="compare('#800080')">Purple</button>
+		<button type="button" id="button6" onclick="compare('#FFA500')">Orange</button>
+		<button type="button" id="button7" onclick="compare('#A52A2A')">Brown</button>
+		<button type="button" id="button8" onclick="compare('#808080')">Grey</button>
+		<button type="button" id="buttonRestart" onclick="changeColour(colour); resetWin();">Restart</button>
+		
+		<p id="text"></p>
+		
+		<script type="text/javascript">
+			changeColour();
+		</script>
+	</body>
+	
+</html>
